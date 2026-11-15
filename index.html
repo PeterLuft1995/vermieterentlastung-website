@@ -56,7 +56,7 @@ footer{background:var(--ink);color:#D7DED9;padding:40px 0;font-size:15px}
 footer a{color:#D7DED9}
 .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
 .head-btn{order:3}nav{order:2;margin-left:auto}.logo{order:1}
-@media (max-width:760px){.wrap{padding:0 16px}.hide-sm{display:none}.bar{gap:12px;padding-top:14px;padding-bottom:14px}.logo{font-size:17px}.logo svg{width:26px;height:26px;margin-right:8px}h1{font-size:30px;hyphens:manual}.head-btn{order:2;padding:10px 14px;font-size:15px}nav{order:3;width:100%;margin-left:0;justify-content:space-between;gap:10px;font-size:15px;padding-top:10px;border-top:1px solid var(--line)}}
+@media (max-width:760px){.wrap{padding:0 16px}.hide-sm{display:none}.bar{gap:12px;padding-top:14px;padding-bottom:14px}.logo{font-size:17px}.logo svg{width:26px;height:26px;margin-right:8px}h1{font-size:30px;hyphens:manual}.head-btn{order:2;padding:10px 14px;font-size:15px}nav{order:3;width:100%;margin-left:0;justify-content:space-between;gap:8px;flex-wrap:nowrap;white-space:nowrap;overflow-x:auto;font-size:15px;padding-top:10px;border-top:1px solid var(--line)}}
 @media (max-width:600px){section{padding:56px 0}}
 @media (max-width:380px){nav{font-size:14px}.logo{font-size:15px}.head-btn{padding:9px 11px;font-size:14px}}
 </style>
@@ -69,6 +69,7 @@ footer a{color:#D7DED9}
 <a href="#leistungen">Leistungen</a>
 <a href="#ablauf">Ablauf</a>
 <a href="#preise">Preise</a>
+<a href="#energie">Strom &amp; Gas</a>
 <a href="#fragen">Fragen</a>
 </nav>
 <a class="btn head-btn" href="#kontakt">Anfrage<span class="hide-sm"> stellen</span></a>
@@ -105,7 +106,7 @@ footer a{color:#D7DED9}
 <div class="card"><h3>Betriebskostenabrechnung</h3><p>Vollständige Abrechnung für jede Mietpartei mit Verteilerschlüssel, Vorauszahlungen und Ergebnis – übersichtlich und nachvollziehbar.</p></div>
 <div class="card"><h3>Belege sortieren und prüfen</h3><p>Wir ordnen Ihre Rechnungen den Kostenarten zu. Nicht umlagefähige Posten wie Reparaturen fallen heraus.</p></div>
 <div class="card"><h3>Fristen im Blick</h3><p>Die Abrechnung muss spätestens zwölf Monate nach Ende des Abrechnungszeitraums beim Mieter sein. Wir erinnern Sie rechtzeitig.</p></div>
-<div class="card"><h3>Energie-Spar-Check</h3><p>Wenn Hausstrom oder Gas zu teuer eingekauft sind, zeigen wir Ihnen günstigere Tarife – auf Wunsch, ohne Verpflichtung.</p></div>
+<div class="card"><h3>Strom- und Gasvergleich</h3><p>Wir vergleichen Ihre Tarife für Hausstrom, Heizgas oder Ihren eigenen Haushalt und kümmern uns auf Wunsch um den Wechsel. <a href="#energie">Mehr dazu</a></p></div>
 </div>
 </div>
 </section>
@@ -140,18 +141,36 @@ footer a{color:#D7DED9}
 </div>
 </section>
 
-<section id="fragen" class="white">
+<section id="energie" class="white">
+<div class="wrap">
+<h2>Strom- und Gasvergleich</h2>
+<p class="lead">Viele zahlen für Strom und Gas mehr als nötig – ob für Hausstrom und Heizung im Mietshaus oder im eigenen Haushalt. Wir vergleichen für Sie und übernehmen auf Wunsch den kompletten Wechsel.</p>
+<div class="grid">
+<div class="step"><div class="num">1</div><h3>Letzte Abrechnung schicken</h3><p>Ein Foto oder PDF Ihrer letzten Jahresabrechnung genügt – daraus lesen wir Verbrauch, Zählernummer und aktuellen Preis ab.</p></div>
+<div class="step"><div class="num">2</div><h3>Vergleich erhalten</h3><p>Sie bekommen günstigere Angebote mit der zu erwartenden Ersparnis – verständlich aufbereitet, ohne Kleingedrucktes.</p></div>
+<div class="step"><div class="num">3</div><h3>Wechsel ohne Aufwand</h3><p>Entscheiden Sie sich für ein Angebot, erledigen wir die Anmeldung. Die Kündigung beim bisherigen Anbieter übernimmt der neue Versorger – ohne Versorgungsunterbrechung.</p></div>
+</div>
+<div class="extras">
+<div><b>Für wen?</b><br>Private Vermieter (Hausstrom, Heizgas), Mieter und Eigentümer für den eigenen Haushalt sowie kleine Gewerbebetriebe.</div>
+<div><b>Unverbindlich</b><br>Der Vergleich ist für Sie unverbindlich. Kommt ein Wechsel zustande, erhalten wir in der Regel eine Vergütung vom Energieanbieter bzw. dessen Vertriebspartner.</div>
+<a class="btn" href="mailto:info@vermieterentlastung.de?subject=Anfrage%20Strom-%2FGasvergleich&amp;body=Strom%20oder%20Gas%3F%20%0APrivathaushalt%2C%20Mietshaus%20oder%20Gewerbe%3F%20%0APostleitzahl%3A%20%0AJahresverbrauch%20(kWh)%3A%20%0AAktueller%20Anbieter%3A%20%0A%0ABitte%20die%20letzte%20Jahresabrechnung%20als%20Foto%20oder%20PDF%20anh%C3%A4ngen.">Vergleich anfragen</a>
+</div>
+</div>
+</section>
+
+<section id="fragen">
 <div class="wrap faq">
 <h2>Häufige Fragen</h2>
 <div><h3>Welche Unterlagen brauchen Sie?</h3><p>Die Rechnungen und Bescheide des Jahres (z. B. Grundsteuer, Wasser, Müll, Versicherung, Hausstrom), Ihre Mietverträge, die geleisteten Vorauszahlungen und vorhandene Zählerstände. Details in der <a href="unterlagen.html">Checkliste</a>.</p></div>
 <div><h3>Muss ich dafür in der Nähe wohnen?</h3><p>Nein. Wir arbeiten komplett digital und betreuen Vermieter in ganz Deutschland.</p></div>
 <div><h3>Wie lange dauert eine Abrechnung?</h3><p>In der Regel erhalten Sie die fertige Abrechnung innerhalb von zwei Wochen, nachdem alle Unterlagen vorliegen – mit Express in drei Werktagen.</p></div>
+<div><h3>Kostet der Strom- und Gasvergleich etwas?</h3><p>Nein, der Vergleich ist für Sie unverbindlich. Kommt ein Wechsel zustande, werden wir in der Regel vom Energieanbieter bzw. dessen Vertriebspartner vergütet.</p></div>
 <div><h3>Was passiert mit meinen Daten?</h3><p>Ihre Unterlagen und die Daten Ihrer Mieter nutzen wir ausschließlich für Ihre Abrechnung. Auf Wunsch schließen wir einen Vertrag zur Auftragsverarbeitung.</p></div>
 <div><h3>Beraten Sie auch, wenn ein Mieter widerspricht?</h3><p>Wir erläutern gern, wie die Abrechnung berechnet wurde. Eine Rechtsberatung oder Vertretung im Streitfall bieten wir nicht an – dafür sind Anwälte oder Ihr Haus- und Grundeigentümerverein zuständig.</p></div>
 </div>
 </section>
 
-<section id="kontakt">
+<section id="kontakt" class="white">
 <div class="wrap contact">
 <div>
 <h2>Kontakt</h2>
