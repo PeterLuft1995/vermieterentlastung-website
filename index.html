@@ -12,9 +12,9 @@ body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Ar
 a{color:var(--accent)}a:hover{color:var(--accent-dark)}
 .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
 header{background:#fff;border-bottom:1px solid var(--line)}
-.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding:18px 0}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:700;font-size:20px}
-.logo span{color:var(--accent)}
+.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px}
+.logo{display:flex;align-items:center;gap:0;text-decoration:none;color:var(--ink);font-weight:700;font-size:20px}
+.logo span{color:var(--accent)}.logo svg{margin-right:10px;flex:none}
 nav{display:flex;flex-wrap:wrap;align-items:center;gap:22px;font-weight:500}
 nav a{color:var(--muted);text-decoration:none}
 .btn{display:inline-block;background:var(--accent);color:#fff!important;text-decoration:none;padding:13px 20px;border-radius:8px;font-weight:600}
@@ -55,7 +55,10 @@ h3{font-size:19px;margin:0 0 8px}
 footer{background:var(--ink);color:#D7DED9;padding:40px 0;font-size:15px}
 footer a{color:#D7DED9}
 .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
-@media (max-width:600px){section{padding:56px 0}nav{gap:14px}}
+.head-btn{order:3}nav{order:2;margin-left:auto}.logo{order:1}
+@media (max-width:760px){.wrap{padding:0 16px}.hide-sm{display:none}.bar{gap:12px;padding-top:14px;padding-bottom:14px}.logo{font-size:17px}.logo svg{width:26px;height:26px;margin-right:8px}h1{font-size:30px;hyphens:manual}.head-btn{order:2;padding:10px 14px;font-size:15px}nav{order:3;width:100%;margin-left:0;justify-content:space-between;gap:10px;font-size:15px;padding-top:10px;border-top:1px solid var(--line)}}
+@media (max-width:600px){section{padding:56px 0}}
+@media (max-width:380px){nav{font-size:14px}.logo{font-size:15px}.head-btn{padding:9px 11px;font-size:14px}}
 </style>
 </head>
 <body>
@@ -67,8 +70,8 @@ footer a{color:#D7DED9}
 <a href="#ablauf">Ablauf</a>
 <a href="#preise">Preise</a>
 <a href="#fragen">Fragen</a>
-<a class="btn" href="#kontakt">Anfrage stellen</a>
 </nav>
+<a class="btn head-btn" href="#kontakt">Anfrage<span class="hide-sm"> stellen</span></a>
 </div>
 </header>
 
@@ -77,7 +80,7 @@ footer a{color:#D7DED9}
 <div class="wrap hero">
 <div>
 <p class="eyebrow">Für private Vermieter · bundesweit · komplett digital</p>
-<h1>Ihre Nebenkostenabrechnung – fertig, verständlich und pünktlich.</h1>
+<h1>Ihre Neben&shy;kosten&shy;abrechnung – fertig, verständlich und pünktlich.</h1>
 <p class="lead">Sie schicken uns Ihre Belege, wir erstellen die Betriebskostenabrechnung für jede Mietpartei. Sie prüfen, unterschreiben und versenden – ohne Tabellen, ohne Rechnerei, ohne Fristdruck.</p>
 <div style="display:flex;flex-wrap:wrap;gap:14px">
 <a class="btn" href="#kontakt">Unverbindlich anfragen</a>
