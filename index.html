@@ -59,6 +59,55 @@ footer a{color:#D7DED9}
 @media (max-width:760px){.wrap{padding:0 16px}.hide-sm{display:none}.bar{gap:12px;padding-top:14px;padding-bottom:14px}.logo{font-size:17px}.logo svg{width:26px;height:26px;margin-right:8px}h1{font-size:30px;hyphens:manual}.head-btn{order:2;padding:10px 14px;font-size:15px}nav{order:3;width:100%;margin-left:0;justify-content:space-between;gap:8px;flex-wrap:nowrap;white-space:nowrap;overflow-x:auto;font-size:15px;padding-top:10px;border-top:1px solid var(--line)}}
 @media (max-width:600px){section{padding:56px 0}}
 @media (max-width:380px){nav{font-size:14px}.logo{font-size:15px}.head-btn{padding:9px 11px;font-size:14px}}
+
+/* ===== Geldhirn-Netzwerk (Top-Stories, Strom & Gas) ===== */
+
+.gn-servicebar{background:#0B1F45;color:#E8EEF9;font-size:.88rem;line-height:1.35}
+.gn-servicebar .gn-wrap{display:flex;align-items:center;justify-content:center;gap:10px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap;text-align:center}
+.gn-servicebar svg{color:#FFD54A;flex:none}
+.gn-servicebar a{color:#FFD54A;font-weight:700;text-decoration:none;white-space:nowrap}
+.gn-servicebar a:hover{text-decoration:underline}
+.gn-top{padding:36px 0 8px}
+.gn-top-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+.gn-top-head h2{margin:0;font-size:1.45rem;letter-spacing:-.01em}
+.gn-top-head span{font-size:.85rem;color:#64748B}
+.gn-top-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.gn-story{display:flex;flex-direction:column;background:#fff;border:1px solid #E2E8F0;border-radius:14px;overflow:hidden;text-decoration:none;color:#0F172A;transition:box-shadow .2s,transform .2s}
+.gn-story:hover{box-shadow:0 12px 28px rgba(15,23,42,.12);transform:translateY(-2px)}
+.gn-story-img{aspect-ratio:16/9;background:linear-gradient(135deg,#0B3D91 0%,#4F46E5 100%);display:flex;align-items:center;justify-content:center;padding:6px 10px}
+.gn-story-img img{width:100%;height:100%;object-fit:contain;display:block}
+.gn-story-body{padding:12px 14px 16px;display:flex;flex-direction:column;gap:6px}
+.gn-kicker{font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#4F46E5}
+.gn-kicker small{font-weight:600;color:#64748B;letter-spacing:.02em;text-transform:none;font-size:.72rem}
+.gn-story h3{margin:0;font-size:1rem;line-height:1.3;color:#0F172A}
+.gn-energy{padding:28px 0}
+.gn-energy-box{background:linear-gradient(135deg,#0B1F45 0%,#0B3D91 100%);color:#E8EEF9;border-radius:18px;padding:28px 30px;display:grid;grid-template-columns:1.5fr 1fr;gap:28px;align-items:center;box-shadow:0 18px 40px rgba(11,31,69,.18)}
+.gn-energy-box h2{color:#fff;margin:4px 0 10px;font-size:1.6rem;line-height:1.2;letter-spacing:-.01em}
+.gn-energy-box p{margin:0 0 10px;color:#CBD5E1;line-height:1.55}
+.gn-eyebrow{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#FFD54A !important;margin:0 !important}
+.gn-checks{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px 18px}
+.gn-checks li{display:flex;align-items:center;gap:6px;color:#fff;font-weight:600;font-size:.92rem}
+.gn-checks svg{color:#34D399}
+.gn-energy-action{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:20px}
+.gn-btn{display:block;text-align:center;background:#FFD54A;color:#0B1F45 !important;font-weight:800;text-decoration:none;padding:14px 18px;border-radius:10px;font-size:1rem}
+.gn-btn:hover{background:#FFE07A}
+.gn-fine{font-size:.78rem !important;color:#AEB9CC !important;margin:12px 0 0 !important;line-height:1.45}
+.gn-energy-mini{margin:28px 0;border:1px solid #E2E8F0;border-left:5px solid #FFD54A;background:#fff;border-radius:12px;padding:18px 20px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.gn-energy-mini-text{flex:1 1 300px}
+.gn-energy-mini strong{display:block;font-size:1.05rem;color:#0F172A;margin-bottom:4px}
+.gn-energy-mini p{margin:0;color:#475569;font-size:.93rem;line-height:1.5}
+.gn-energy-mini .gn-btn{display:inline-block;flex:none}
+.gn-netfoot{background:#0B1F45;color:#CBD5E1;font-size:.88rem}
+.gn-netfoot .gn-wrap{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center;justify-content:center;padding-top:14px;padding-bottom:14px}
+.gn-netfoot b{color:#fff}
+.gn-netfoot a{color:#E8EEF9;text-decoration:none}
+.gn-netfoot a:hover{color:#FFD54A}
+@media (max-width:900px){.gn-top-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gn-energy-box{grid-template-columns:1fr;padding:22px}}
+@media (max-width:520px){.gn-top-grid{gap:10px}.gn-story h3{font-size:.9rem}.gn-story-body{padding:10px 10px 12px}.gn-energy-box h2{font-size:1.3rem}.gn-servicebar{font-size:.82rem}}
+.gn-netfoot{margin-top:0}
+.ve-live{display:inline-block;background:#E3F3ED;color:#1B5E4E;font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:5px 12px;margin-bottom:12px}
+.gn-netfoot .gn-wrap{max-width:1120px;margin:0 auto;padding-left:24px;padding-right:24px}
+.gn-story-img{background:linear-gradient(135deg,#123F35 0%,#1B5E4E 100%)}.gn-kicker{color:#1B5E4E}.ve-btns{display:flex;flex-direction:column;gap:10px}
 </style>
 </head>
 <body>
@@ -71,6 +120,7 @@ footer a{color:#D7DED9}
 <a href="#preise">Preise</a>
 <a href="#energie">Strom &amp; Gas</a>
 <a href="#fragen">Fragen</a>
+<a href="https://geldhirn.de">Rechner</a>
 </nav>
 <a class="btn head-btn" href="#kontakt">Anfrage<span class="hide-sm"> stellen</span></a>
 </div>
@@ -143,6 +193,7 @@ footer a{color:#D7DED9}
 
 <section id="energie" class="white">
 <div class="wrap">
+<span class="ve-live">Ab sofort verfügbar</span>
 <h2>Strom- und Gasvergleich</h2>
 <p class="lead">Viele zahlen für Strom und Gas mehr als nötig – ob für Hausstrom und Heizung im Mietshaus oder im eigenen Haushalt. Wir vergleichen für Sie und übernehmen auf Wunsch den kompletten Wechsel.</p>
 <div class="grid">
@@ -152,11 +203,16 @@ footer a{color:#D7DED9}
 </div>
 <div class="extras">
 <div><b>Für wen?</b><br>Private Vermieter (Hausstrom, Heizgas), Mieter und Eigentümer für den eigenen Haushalt sowie kleine Gewerbebetriebe.</div>
-<div><b>Unverbindlich</b><br>Der Vergleich ist für Sie unverbindlich. Kommt ein Wechsel zustande, erhalten wir in der Regel eine Vergütung vom Energieanbieter bzw. dessen Vertriebspartner.</div>
-<a class="btn" href="mailto:info@vermieterentlastung.de?subject=Anfrage%20Strom-%2FGasvergleich&amp;body=Strom%20oder%20Gas%3F%20%0APrivathaushalt%2C%20Mietshaus%20oder%20Gewerbe%3F%20%0APostleitzahl%3A%20%0AJahresverbrauch%20(kWh)%3A%20%0AAktueller%20Anbieter%3A%20%0A%0ABitte%20die%20letzte%20Jahresabrechnung%20als%20Foto%20oder%20PDF%20anh%C3%A4ngen.">Vergleich anfragen</a>
+<div><b>Unverbindlich</b><br>Wir vergleichen die Tarife ausgewählter Energieversorger (kein vollständiger Marktvergleich). Der Vergleich ist für Sie unverbindlich. Kommt ein Wechsel zustande, erhalten wir in der Regel eine Vergütung vom Energieanbieter bzw. dessen Vertriebspartner.</div>
+<div class="ve-btns"><a class="btn" href="mailto:info@vermieterentlastung.de?subject=Anfrage%20Strom-%2FGasvergleich&amp;body=Strom%20oder%20Gas%3F%20%0APrivathaushalt%2C%20Mietshaus%20oder%20Gewerbe%3F%20%0APostleitzahl%3A%20%0AJahresverbrauch%20(kWh)%3A%20%0AAktueller%20Anbieter%3A%20%0A%0ABitte%20die%20letzte%20Jahresabrechnung%20als%20Foto%20oder%20PDF%20anh%C3%A4ngen.">Vergleich anfragen</a>
+<a class="btn btn-ghost" href="https://geldhirn.de/vertraege/strom-gas.html">Sparpotenzial online berechnen</a></div>
 </div>
 </div>
 </section>
+
+<section id="wissen" class="white"><div class="wrap"><h2>Kostenlose Rechner und Nachrichten für Vermieter</h2>
+<p class="lead">Auf unserem Portal <a href="https://geldhirn.de">geldhirn.de</a> finden Sie über 30 kostenlose Rechner, Ratgeber und aktuelle Nachrichten rund um Immobilie, Energie und Geld.</p>
+<div class="gn-top-grid" style="margin-top:28px"><a class="gn-story" href="https://geldhirn.de/immobilien/mietrendite-rechner.html"><div class="gn-story-img"><img src="https://news.geldhirn.de/assets/illu/chart.svg" alt="" loading="lazy" width="320" height="180"></div><div class="gn-story-body"><span class="gn-kicker">Rechner</span><h3>Mietrendite-Rechner</h3><p style="margin:0;color:#475569;font-size:.9rem">Wie viel bringt Ihre Wohnung nach Kosten wirklich?</p></div></a><a class="gn-story" href="https://geldhirn.de/immobilien/hauskosten-rechner.html"><div class="gn-story-img"><img src="https://news.geldhirn.de/assets/illu/house.svg" alt="" loading="lazy" width="320" height="180"></div><div class="gn-story-body"><span class="gn-kicker">Rechner</span><h3>Hauskosten-Rechner</h3><p style="margin:0;color:#475569;font-size:.9rem">Laufende Kosten Ihrer Immobilie auf einen Blick.</p></div></a><a class="gn-story" href="https://geldhirn.de/immobilien/objektanalyse.html"><div class="gn-story-img"><img src="https://news.geldhirn.de/assets/illu/magnifier.svg" alt="" loading="lazy" width="320" height="180"></div><div class="gn-story-body"><span class="gn-kicker">Ab 29 €</span><h3>Objektanalyse vor dem Kauf</h3><p style="margin:0;color:#475569;font-size:.9rem">Wir rechnen ein Kaufobjekt für Sie durch – mit PDF-Bericht.</p></div></a><a class="gn-story" href="https://news.geldhirn.de/energie/strompreis-2027-preisbrief-was-tun.html"><div class="gn-story-img"><img src="https://news.geldhirn.de/assets/illu/letter.svg" alt="" loading="lazy" width="320" height="180"></div><div class="gn-story-body"><span class="gn-kicker">News</span><h3>Strompreis-Brief für 2027</h3><p style="margin:0;color:#475569;font-size:.9rem">Was die Preiserhöhung bedeutet und was Sie jetzt tun können.</p></div></a></div></div></section>
 
 <section id="fragen">
 <div class="wrap faq">
@@ -194,5 +250,6 @@ footer a{color:#D7DED9}
 <div><a href="impressum.html">Impressum</a> &nbsp;·&nbsp; <a href="datenschutz.html">Datenschutz</a></div>
 </div>
 </footer>
+<div class="gn-netfoot"><div class="gn-wrap"><b>Geldhirn-Netzwerk:</b><a href="https://geldhirn.de">Rechner &amp; Ratgeber</a><a href="https://news.geldhirn.de">News</a><a href="https://deals.geldhirn.de">Deals</a><a href="https://leben.geldhirn.de">Leben</a><a href="https://geldhirn.de/vertraege/strom-gas.html">Strom- &amp; Gas-Tarifcheck</a></div></div>
 </body>
 </html>
