@@ -102,6 +102,9 @@ footer a{color:#D7DED9}
 .gn-netfoot b{color:#fff}
 .gn-netfoot a{color:#E8EEF9;text-decoration:none}
 .gn-netfoot a:hover{color:#FFD54A}
+.gn-social{display:inline-flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
+.gn-social a{display:inline-flex;align-items:center;gap:6px;font-weight:600}
+.gn-social svg{color:#FFD54A}
 @media (max-width:900px){.gn-top-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gn-energy-box{grid-template-columns:1fr;padding:22px}}
 @media (max-width:520px){.gn-top-grid{gap:10px}.gn-story h3{font-size:.9rem}.gn-story-body{padding:10px 10px 12px}.gn-energy-box h2{font-size:1.3rem}.gn-servicebar{font-size:.82rem}}
 .gn-netfoot{margin-top:0}
@@ -109,7 +112,42 @@ footer a{color:#D7DED9}
 .gn-netfoot .gn-wrap{max-width:1120px;margin:0 auto;padding-left:24px;padding-right:24px}
 .gn-story-img{background:linear-gradient(135deg,#123F35 0%,#1B5E4E 100%)}.gn-kicker{color:#1B5E4E}.ve-btns{display:flex;flex-direction:column;gap:10px}
 .ve-bonus{background:#FFF8DC;border:2px solid #FFD54A;border-radius:14px;padding:14px 18px;margin:18px 0 22px;line-height:1.5}.ve-bonus a{color:inherit;text-decoration:underline}
+
+/* ===== Anfrageformular ===== */
+.fbox{flex:1 1 340px;background:#fff;border:2px solid var(--accent);border-radius:16px;padding:26px;box-shadow:0 10px 30px rgba(21,32,28,.08)}
+.fbox h3{margin:0 0 4px}
+.fbox .sub{color:var(--muted);margin:0 0 16px;font-size:15px}
+.vf{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.vf label{display:flex;flex-direction:column;gap:5px;font-size:14px;font-weight:600;color:var(--ink)}
+.vf .full{grid-column:1/-1}
+.vf input,.vf select,.vf textarea{font:inherit;font-size:16px;font-weight:400;padding:11px 12px;border:1px solid #C9D1CB;border-radius:8px;background:#fff;color:var(--ink);width:100%;box-sizing:border-box}
+.vf input:focus,.vf select:focus,.vf textarea:focus{outline:2px solid var(--accent);border-color:var(--accent)}
+.vf button{grid-column:1/-1;border:0;cursor:pointer;font-size:17px;padding:14px 20px}
+.vf .hint{grid-column:1/-1;font-size:13px;color:var(--muted);margin:0}
+.vf .ok{grid-column:1/-1;display:none;background:var(--soft);border-radius:8px;padding:10px 12px;font-size:14px}
+@media (max-width:480px){.vf{grid-template-columns:1fr}}
+
+/* ===== Preisrechner + Vertrauensleiste ===== */
+.calc{background:#fff;border:2px solid var(--accent);border-radius:16px;padding:26px 28px;margin-top:20px;display:flex;flex-wrap:wrap;gap:24px 40px;align-items:center}
+.calc .in{flex:2 1 420px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.calc label{display:flex;flex-direction:column;gap:5px;font-size:14px;font-weight:600}
+.calc input[type=number]{font:inherit;font-size:16px;padding:10px 12px;border:1px solid #C9D1CB;border-radius:8px;width:100%;box-sizing:border-box}
+.calc .cb{flex-direction:row;align-items:center;gap:10px;font-weight:500}
+.calc .cb input{width:20px;height:20px;accent-color:var(--accent)}
+.calc .out{flex:1 1 220px;text-align:center}
+.calc .sum{font-size:46px;font-weight:700;color:var(--accent);line-height:1.1;margin:4px 0}
+.calc .det{font-size:14px;color:var(--muted);margin:0 0 14px}
+.trust{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:center;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--soft)}
+.trust span{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;color:var(--ink)}
+.trust svg{flex:none}
+@media (max-width:480px){.calc .in{grid-template-columns:1fr}}
 </style>
+<meta property="og:title" content="Nebenkostenabrechnung für private Vermieter – Festpreis ab 39 € je Wohnung">
+<meta property="og:description" content="Belege schicken, fertige Abrechnung je Mietpartei erhalten. Bundesweit, digital, ohne Abo.">
+<meta property="og:url" content="https://vermieterentlastung.de/">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://vermieterentlastung.de/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Vermieterentlastung","url":"https://vermieterentlastung.de/","email":"info@vermieterentlastung.de","description":"Nebenkosten- und Betriebskostenabrechnung für private Vermieter – bundesweit, digital, zum Festpreis.","areaServed":"DE","address":{"@type":"PostalAddress","postOfficeBoxNumber":"100111","postalCode":"98561","addressLocality":"Schmalkalden","addressCountry":"DE"},"priceRange":"39–89 € je Wohneinheit"}</script>
 </head>
 <body>
 <header>
@@ -122,7 +160,7 @@ footer a{color:#D7DED9}
 <a href="#fragen">Fragen</a>
 <a href="https://geldhirn.de">Rechner</a>
 </nav>
-<a class="btn head-btn" href="#kontakt">Anfrage<span class="hide-sm"> stellen</span></a>
+<a class="btn head-btn" href="#anfrage">Anfrage<span class="hide-sm"> stellen</span></a>
 </div>
 </header>
 
@@ -134,19 +172,18 @@ footer a{color:#D7DED9}
 <h1>Ihre Neben&shy;kosten&shy;abrechnung – fertig, verständlich und pünktlich.</h1>
 <p class="lead">Sie schicken uns Ihre Belege, wir erstellen die Betriebskostenabrechnung für jede Mietpartei. Sie prüfen, unterschreiben und versenden – ohne Tabellen, ohne Rechnerei, ohne Fristdruck.</p>
 <div style="display:flex;flex-wrap:wrap;gap:14px">
-<a class="btn" href="#kontakt">Unverbindlich anfragen</a>
 <a class="btn btn-ghost" href="#ablauf">So funktioniert es</a>
+<a class="btn btn-ghost" href="#preise">Preise ansehen</a>
 </div>
-</div>
-<div class="box">
-<h3>Das übernehmen wir für Sie</h3>
-<div class="check"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1B5E4E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Abrechnung je Mietpartei nach Ihrem Mietvertrag</span></div>
+<div><div class="check"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1B5E4E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Abrechnung je Mietpartei nach Ihrem Mietvertrag</span></div>
 <div class="check"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1B5E4E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Prüfung, welche Kosten umlagefähig sind</span></div>
-<div class="check"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1B5E4E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Erinnerung an die 12-Monats-Frist</span></div>
+<div class="check"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1B5E4E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Erinnerung an die 12-Monats-Frist</span></div></div>
 </div>
+<div class="fbox" id="anfrage"><h3>Kostenloses Angebot</h3><p class="sub">In 1 Minute anfragen – wir melden uns schnell mit einem Festpreis.</p><form class="vf" id="vf-hero" novalidate><label>Name<input name="name" required autocomplete="name"></label><label>E-Mail<input name="mail" type="email" required autocomplete="email"></label><label>Wohneinheiten<select name="we"><option>1</option><option>2–5</option><option>6–12</option><option>13 oder mehr</option></select></label><label>Abrechnungsjahr<select name="jahr"><option>2025</option><option>2024</option><option>2026 (laufendes Jahr)</option><option>mehrere Jahre</option></select></label><button class="btn" type="submit">Kostenloses Angebot anfordern</button><p class="hint">Unverbindlich. Beim Absenden öffnet sich Ihr E-Mail-Programm mit der fertigen Anfrage – nur noch auf „Senden“ tippen. Hinweise in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p><p class="ok">Ihr E-Mail-Programm sollte sich jetzt öffnen. Falls nicht, schreiben Sie bitte direkt an <a href="mailto:info@vermieterentlastung.de">info@vermieterentlastung.de</a>.</p></form></div>
 </div>
 </section>
 
+<div class="trust" aria-label="Unsere Grundsätze"><span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B5E4E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Festpreis vorab – keine Überraschungen</span><span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B5E4E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Nach Betriebskostenverordnung &amp; Heizkostenverordnung</span><span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B5E4E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Kein Abo, keine Vertragsbindung</span><span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B5E4E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Datenschutz: Vertrag zur Auftragsverarbeitung auf Wunsch</span></div>
 <section id="leistungen">
 <div class="wrap">
 <h2>Leistungen</h2>
@@ -180,10 +217,11 @@ footer a{color:#D7DED9}
 <div class="price hl"><span class="tag">Beliebt</span><br><b>Mehrfamilienhaus</b><br><small>6 bis 12 Wohneinheiten</small><p class="amt">49 €</p><small>je Wohneinheit</small></div>
 <div class="price"><b>Wohnanlage</b><br><small>ab 13 Wohneinheiten</small><p class="amt">39 €</p><small>je Wohneinheit</small></div>
 </div>
+<div class="calc" id="rechner"><div class="in"><label>Anzahl Wohneinheiten<input id="pc-we" type="number" min="1" max="200" value="4" inputmode="numeric"></label><label>Mieterwechsel im Jahr<input id="pc-mw" type="number" min="0" max="50" value="0" inputmode="numeric"></label><label class="cb"><input id="pc-hz" type="checkbox">Heizkosten ohne Messdienst</label><label class="cb"><input id="pc-ex" type="checkbox">Express (3 Werktage)</label></div><div class="out"><b>Ihr Festpreis</b><p class="sum" id="pc-sum">276 €</p><p class="det" id="pc-det">4 × 69 €</p><a class="btn" href="#anfrage" id="pc-go">Mit diesem Preis anfragen</a></div></div>
 <div class="extras">
 <div><b>Inklusive</b><br>Abrechnung je Mietpartei als PDF, Prüfung der Umlagefähigkeit, Übernahme der Messdienst-Heizkosten (z. B. ista, Techem), Fristerinnerung, Rückfragen per E-Mail.</div>
 <div><b>Zusatzleistungen</b><br>Mieterwechsel im Jahr: +15 € je Wechsel · Heizkosten ohne Messdienst: +10 € je Einheit · Express in 3 Werktagen: +25 %</div>
-<a class="btn" href="#kontakt">Angebot anfordern</a>
+<a class="btn" href="#anfrage">Angebot anfordern</a>
 </div>
 <p><small>Beispiel: Mehrfamilienhaus mit 8 Wohnungen = 8 × 49 € = 392 € für alle Abrechnungen des Jahres. <!--USTHINWEIS--></small></p>
 </div>
@@ -209,7 +247,8 @@ footer a{color:#D7DED9}
 <div>
 <h2>Kontakt</h2>
 <p class="lead">Schreiben Sie uns kurz, wie viele Wohnungen Sie vermieten und für welches Jahr Sie eine Abrechnung brauchen. Sie erhalten ein unverbindliches Angebot.</p>
-<p><a class="btn" href="mailto:info@vermieterentlastung.de?subject=Anfrage%20Nebenkostenabrechnung&amp;body=Anzahl%20Wohneinheiten%3A%20%0AAbrechnungsjahr%3A%20%0AOrt%20der%20Immobilie%3A%20%0AHeizkosten%20%C3%BCber%20Messdienst%20(z.%20B.%20ista)%3F%20%0A">E-Mail an info@vermieterentlastung.de</a></p>
+<form class="vf" id="vf-kontakt" novalidate><label>Name<input name="name" required autocomplete="name"></label><label>E-Mail<input name="mail" type="email" required autocomplete="email"></label><label>Wohneinheiten<select name="we"><option>1</option><option>2–5</option><option>6–12</option><option>13 oder mehr</option></select></label><label>Abrechnungsjahr<select name="jahr"><option>2025</option><option>2024</option><option>2026 (laufendes Jahr)</option><option>mehrere Jahre</option></select></label><label>Telefon (optional)<input name="tel" type="tel" autocomplete="tel"></label><label>Ort der Immobilie<input name="ort" autocomplete="address-level2" placeholder="z. B. Schmalkalden"></label><label class="full">Heizkosten über Messdienst (z. B. ista, Techem)?<select name="mess"><option>ja</option><option>nein</option><option>weiß nicht</option></select></label><label class="full">Nachricht (optional)<textarea name="msg" rows="3" placeholder="Was sollen wir wissen?"></textarea></label><button class="btn" type="submit">Kostenloses Angebot anfordern</button><p class="hint">Unverbindlich. Beim Absenden öffnet sich Ihr E-Mail-Programm mit der fertigen Anfrage – nur noch auf „Senden“ tippen. Hinweise in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p><p class="ok">Ihr E-Mail-Programm sollte sich jetzt öffnen. Falls nicht, schreiben Sie bitte direkt an <a href="mailto:info@vermieterentlastung.de">info@vermieterentlastung.de</a>.</p></form>
+<p style="margin-top:16px">Oder direkt per E-Mail: <a href="mailto:info@vermieterentlastung.de">info@vermieterentlastung.de</a></p>
 <!--TELEFON-->
 </div>
 <div class="box">
@@ -228,6 +267,24 @@ footer a{color:#D7DED9}
 <div><a href="impressum.html">Impressum</a> &nbsp;·&nbsp; <a href="datenschutz.html">Datenschutz</a></div>
 </div>
 </footer>
-<div class="gn-netfoot"><div class="gn-wrap"><b>Geldhirn-Netzwerk:</b><a href="https://geldhirn.de">Rechner &amp; Ratgeber</a><a href="https://news.geldhirn.de">News</a><a href="https://deals.geldhirn.de">Deals</a><a href="https://leben.geldhirn.de">Leben</a></div></div>
+<div class="gn-netfoot"><div class="gn-wrap"><b>Geldhirn-Netzwerk:</b><a href="https://geldhirn.de">Rechner &amp; Ratgeber</a><a href="https://news.geldhirn.de">News</a><a href="https://deals.geldhirn.de">Deals</a><a href="https://leben.geldhirn.de">Leben</a><a href="https://vermieterentlastung.de">Vermieterentlastung – Nebenkostenabrechnung für Vermieter</a><span class="gn-social"><b>Folge uns:</b><a href="https://www.instagram.com/geldhirn.de/" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Instagram</a><a href="https://www.facebook.com/profile.php?id=61596468009833" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v7h4v-7h3l.5-4h-3.5V9c0-.6.4-1 1-1z"/></svg>Facebook</a></span></div></div>
+<script>
+document.querySelectorAll('form.vf').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();
+var g=function(n){var el=f.elements[n];return el?el.value.trim():''};
+if(!g('name')||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(g('mail'))){alert('Bitte Name und eine gültige E-Mail-Adresse angeben.');return;}
+var L=['Name: '+g('name'),'E-Mail: '+g('mail')];if(g('tel'))L.push('Telefon: '+g('tel'));
+L.push('Wohneinheiten: '+g('we'),'Abrechnungsjahr: '+g('jahr'));if(g('ort'))L.push('Ort der Immobilie: '+g('ort'));if(g('mess'))L.push('Messdienst: '+g('mess'));
+if(g('msg'))L.push('','Nachricht:',g('msg'));
+location.href='mailto:info@vermieterentlastung.de?subject='+encodeURIComponent('Anfrage Nebenkostenabrechnung – '+g('we')+' WE, '+g('jahr'))+'&body='+encodeURIComponent(L.join('\n'));
+f.querySelector('.ok').style.display='block';});});
+</script>
+<script>
+(function(){var we=document.getElementById('pc-we');if(!we)return;var mw=document.getElementById('pc-mw'),hz=document.getElementById('pc-hz'),ex=document.getElementById('pc-ex'),sum=document.getElementById('pc-sum'),det=document.getElementById('pc-det');
+function eur(v){return v.toLocaleString('de-DE',{minimumFractionDigits:v%1?2:0,maximumFractionDigits:2})+' €'}
+function calc(){var n=Math.max(1,parseInt(we.value)||1),w=Math.max(0,parseInt(mw.value)||0);var p=n==1?89:n<=5?69:n<=12?49:39;var base=n==1?89:n*p;var t=base+w*15+(hz.checked?n*10:0);var d=[n==1?'Einzelwohnung 89 €':n+' × '+p+' €'];if(w)d.push(w+' Mieterwechsel × 15 €');if(hz.checked)d.push(n+' × 10 € Heizkosten');if(ex.checked){t=t*1.25;d.push('Express +25 %')}sum.textContent=eur(Math.round(t*100)/100);det.textContent=d.join(' + ');return n}
+[we,mw,hz,ex].forEach(function(e){e.addEventListener('input',calc);e.addEventListener('change',calc)});calc();
+document.getElementById('pc-go').addEventListener('click',function(){var n=calc();var sel=document.querySelector('#vf-hero [name=we]');if(sel)sel.value=n==1?'1':n<=5?'2–5':n<=12?'6–12':'13 oder mehr';});
+})();
+</script>
 </body>
 </html>
