@@ -170,6 +170,20 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
 
 .gn-socialbar .gn-wrap{max-width:1120px;margin:0 auto;padding-left:24px;padding-right:24px}
 @media (max-width:760px){.gn-socialbar .gn-wrap{padding-left:12px;padding-right:12px}}
+.small{font-size:14px;color:var(--muted)}
+.tblwrap{overflow-x:auto;margin:20px 0}
+table.vgl{border-collapse:collapse;width:100%;min-width:560px;background:#fff;border:1px solid var(--line);border-radius:12px;font-size:15px}
+.vgl th,.vgl td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.vgl thead th{background:var(--soft)}
+.vgl .hl{background:#E3F1EA;font-weight:600}
+.vgl thead .hl{background:var(--accent);color:#fff}
+.small-tbl{min-width:0}
+.rgrid{display:flex;flex-wrap:wrap;gap:18px;margin-top:24px}
+.rcard{flex:1 1 300px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;text-decoration:none;color:var(--ink)}
+.rcard:hover{border-color:var(--accent)}.rcard span{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.rcard h3{margin:6px 0 6px}.rcard p{margin:0;color:var(--muted);font-size:15px}
+table.vgl.small-tbl{min-width:0}
+@media(max-width:600px){table.vgl{min-width:0;font-size:13px}.vgl th,.vgl td{padding:8px 7px}}
 </style>
 <meta property="og:title" content="Nebenkostenabrechnung für private Vermieter – Festpreis ab 39 € je Wohnung">
 <meta property="og:description" content="Belege schicken, fertige Abrechnung je Mietpartei erhalten. Bundesweit, digital, ohne Abo.">
@@ -188,6 +202,7 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
 <a href="#ablauf">Ablauf</a>
 <a href="#preise">Preise</a>
 <a href="#fragen">Fragen</a>
+<a href="/ratgeber/">Ratgeber</a>
 <a href="https://geldhirn.de">Rechner</a>
 </nav>
 <a class="btn head-btn" href="#anfrage">Anfrage<span class="hide-sm"> stellen</span></a>
@@ -258,6 +273,19 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
 </div>
 </section>
 
+<section id="vergleich" class="white"><div class="wrap"><h2>Selbst machen, Hausverwaltung oder Vermieterentlastung?</h2><p class="lead">Sie wollen nur die Abrechnung loswerden – nicht gleich die ganze Verwaltung abgeben. Genau dafür sind wir da.</p><div class="tblwrap"><table class="vgl">
+<thead><tr><th></th><th class="hl">Vermieterentlastung</th><th>Selbst mit Software</th><th>Hausverwaltung</th></tr></thead>
+<tbody>
+<tr><th>Ihr Zeitaufwand</th><td class="hl">gering – Fotos oder PDFs schicken</td><td>hoch – Belege sortieren, eintippen, prüfen</td><td>gering</td></tr>
+<tr><th>Fachwissen nötig</th><td class="hl">nein</td><td>ja (BetrKV, Umlageschlüssel, Fristen)</td><td>nein</td></tr>
+<tr><th>Kosten</th><td class="hl">Festpreis ab 39 € je Wohnung, nur für die Abrechnung</td><td>Lizenz + Ihre Zeit</td><td>meist Teil einer laufenden Verwaltervergütung</td></tr>
+<tr><th>Vertragsbindung</th><td class="hl">nein – Jahr für Jahr neu beauftragen</td><td>Abo oder Jahreslizenz</td><td>in der Regel ja</td></tr>
+<tr><th>Prüfung auf nicht umlagefähige Kosten</th><td class="hl">ja</td><td>selbst</td><td>ja</td></tr>
+<tr><th>§ 35a-Aufstellung für Mieter</th><td class="hl">ja, inklusive</td><td>je nach Software</td><td>meist ja</td></tr>
+<tr><th>Vorschlag neue Vorauszahlung</th><td class="hl">ja, inklusive</td><td>je nach Software</td><td>meist ja</td></tr>
+</tbody></table></div>
+<p class="small">Vergleich nach typischen Merkmalen der Angebotsarten, ohne Gewähr für einzelne Anbieter. Endpreise – als Kleinunternehmer berechne ich gemäß § 19 UStG keine Umsatzsteuer.</p></div></section>
+<section id="ratgeber"><div class="wrap"><h2>Ratgeber für Vermieter</h2><p class="lead">Die wichtigsten Regeln zur Nebenkostenabrechnung – kurz und verständlich.</p><div class="rgrid"><a class="rcard" href="/ratgeber/abrechnungsfrist.html"><span>Fristen</span><h3>Frist für die Nebenkostenabrechnung: Bis wann muss der Vermieter abrechnen?</h3><p>Die Nebenkostenabrechnung muss spätestens 12 Monate nach Ende des Abrechnungszeitraums beim Mieter sein. Was bei Verspätung passiert und wie Sie den Zugang beweisen.</p></a><a class="rcard" href="/ratgeber/umlageschluessel.html"><span>Verteilerschlüssel</span><h3>Umlageschlüssel in der Nebenkostenabrechnung: Wohnfläche, Personen, Verbrauch</h3><p>Welcher Verteilerschlüssel gilt für welche Nebenkosten? Wohnfläche, Personen, Einheiten und Verbrauch erklärt – mit den Regeln aus BGB und Heizkostenverordnung.</p></a><a class="rcard" href="/ratgeber/haeufige-fehler.html"><span>Fehler vermeiden</span><h3>Die 10 häufigsten Fehler in der Nebenkostenabrechnung – und wie Sie sie vermeiden</h3><p>Verwaltungskosten umgelegt, Leerstand verteilt, Frist verpasst: die typischen Fehler in Nebenkostenabrechnungen von privaten Vermietern und wie Sie sie vermeiden.</p></a><a class="rcard" href="/ratgeber/umlagefaehige-nebenkosten.html"><span>Betriebskosten</span><h3>Umlagefähige Nebenkosten: Die 17 Betriebskostenarten nach BetrKV</h3><p>Welche Nebenkosten darf der Vermieter auf Mieter umlegen? Alle 17 Kostenarten der Betriebskostenverordnung und was nicht umlagefähig ist.</p></a><a class="rcard" href="/ratgeber/kosten-abrechnung-erstellen-lassen.html"><span>Kosten</span><h3>Was kostet es, die Nebenkostenabrechnung erstellen zu lassen?</h3><p>Selbst machen, Hausverwaltung oder Abrechnungsservice: Kosten, Aufwand und Vorteile im Vergleich – mit Festpreisbeispielen pro Wohnung.</p></a></div></div></section>
 <section id="wissen" class="white"><div class="wrap"><h2>Kostenlose Rechner und Nachrichten für Vermieter</h2>
 <p class="lead">Auf unserem Portal <a href="https://geldhirn.de">geldhirn.de</a> finden Sie über 30 kostenlose Rechner, Ratgeber und aktuelle Nachrichten rund um Immobilie, Energie und Geld.</p>
 <div class="gn-top-grid" style="margin-top:28px"><a class="gn-story" href="https://geldhirn.de/immobilien/mietrendite-rechner.html"><div class="gn-story-img"><img src="https://news.geldhirn.de/assets/illu/chart.svg" alt="" loading="lazy" width="320" height="180"></div><div class="gn-story-body"><span class="gn-kicker">Rechner</span><h3>Mietrendite-Rechner</h3><p style="margin:0;color:#475569;font-size:.9rem">Wie viel bringt Ihre Wohnung nach Kosten wirklich?</p></div></a><a class="gn-story" href="https://geldhirn.de/immobilien/hauskosten-rechner.html"><div class="gn-story-img"><img src="https://news.geldhirn.de/assets/illu/house.svg" alt="" loading="lazy" width="320" height="180"></div><div class="gn-story-body"><span class="gn-kicker">Rechner</span><h3>Hauskosten-Rechner</h3><p style="margin:0;color:#475569;font-size:.9rem">Laufende Kosten Ihrer Immobilie auf einen Blick.</p></div></a><a class="gn-story" href="https://geldhirn.de/immobilien/objektanalyse.html"><div class="gn-story-img"><img src="https://news.geldhirn.de/assets/illu/magnifier.svg" alt="" loading="lazy" width="320" height="180"></div><div class="gn-story-body"><span class="gn-kicker">Ab 29 €</span><h3>Objektanalyse vor dem Kauf</h3><p style="margin:0;color:#475569;font-size:.9rem">Wir rechnen ein Kaufobjekt für Sie durch – mit PDF-Bericht.</p></div></a><a class="gn-story" href="https://news.geldhirn.de/energie/strompreis-2027-preisbrief-was-tun.html"><div class="gn-story-img"><img src="https://news.geldhirn.de/assets/illu/letter.svg" alt="" loading="lazy" width="320" height="180"></div><div class="gn-story-body"><span class="gn-kicker">News</span><h3>Strompreis-Brief für 2027</h3><p style="margin:0;color:#475569;font-size:.9rem">Was die Preiserhöhung bedeutet und was Sie jetzt tun können.</p></div></a></div></div></section>
